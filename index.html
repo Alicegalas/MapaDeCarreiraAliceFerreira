@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Alice Ferreira Galas | Mapa de Carreira</title>
+    <meta name="description" content="Mapa de carreira com dados carregados dinamicamente de um arquivo JSON.">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#434E5E">
+    <link rel="shortcut icon" href="assets/images/codigo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
+    <link id="theme-style" rel="stylesheet" href="assets/css/bootstrap-5.css">
+    <style>
+        .skip-link {
+            left: 1rem;
+            position: absolute;
+            top: -4rem;
+            z-index: 1000;
+        }
+
+        .skip-link:focus {
+            top: 1rem;
+        }
+
+        .profile-picture {
+            height: 250px;
+            object-fit: cover;
+            width: 230px;
+        }
+
+        .badge {
+            margin-bottom: .35rem;
+        }
+        
+        /* Garante legibilidade dos links de contato no fundo azul */
+        .contact-link {
+            color: rgba(255, 255, 255, 0.85);
+            text-decoration: underline;
+            transition: color 0.2s ease;
+        }
+        .contact-link:hover {
+            color: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="resume-header pt-4 pt-md-0" role="banner">
+        <div class="text-center position-relative">
+            <div class="resume-wrapper-inner mx-auto text-start bg-primary shadow-lg">
+                <div class="row">
+                    <div class="col-block col-md-auto resume-picture-holder text-center text-md-start">
+                        <img id="profile-photo" class="picture profile-picture" src="assets/images/ImgPerfil.png" alt="Foto de Perfil">
+                    </div>
+
+                    <div class="col">
+                        <div class="row p-4 justify-content-center justify-content-md-between">
+                            <div class="primary-info col-auto">
+                                <h1 id="profile-name" class="name mt-0 mb-1 text-white text-uppercase">Carregando...</h1>
+                                <p id="profile-headline" class="title mb-3 text-white-50"></p>
+                                <ul id="contact-list" class="list-unstyled"></ul>
+                            </div>
+
+                            <nav class="secondary-info col-auto mt-2" aria-label="Navegação principal">
+                                <ul class="resume-social list-unstyled">
+                                    <li class="mb-2"><a class="text-link text-white text-decoration-none" href="#perfil">Perfil</a></li>
+                                    <li class="mb-2"><a class="text-link text-white text-decoration-none" href="#mapa-carreira">Mapa de carreira</a></li>
+                                    <li class="mb-2"><a class="text-link text-white text-decoration-none" href="#habilidades">Habilidades</a></li>
+                                    <li><a class="text-link text-white text-decoration-none" href="#idiomas">Idiomas</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main id="conteudo-principal" class="resume-wrapper text-center position-relative" tabindex="-1">
+        <div class="resume-wrapper-inner mx-auto text-start bg-white shadow-lg">
+            <div class="resume-body p-5">
+                <section id="perfil" class="resume-section summary-section mb-5" aria-labelledby="titulo-perfil">
+                    <h2 id="titulo-perfil" class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">
+                        Sobre mim
+                    </h2>
+                    <div class="resume-section-content">
+                        <p id="profile-summary" class="text-muted"></p>
+                        <a id="cv-link" class="btn btn-primary bg-primary mt-3" target="_blank" href="#">
+                            Baixar currículo PDF
+                        </a>
+                    </div>
+                </section>
+
+                <div class="row">
+                    <div class="col-lg-9">
+                        <section id="mapa-carreira" class="resume-section experience-section mb-5" aria-labelledby="titulo-mapa-carreira">
+                            <h2 id="titulo-mapa-carreira" class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">
+                                Mapa de carreira
+                            </h2>
+                            <div class="resume-section-content">
+                                <div id="career-timeline" class="resume-timeline position-relative"></div>
+                            </div>
+                        </section>
+                    </div>
+
+                    <aside class="col-lg-3" aria-label="Informações complementares">
+                        <section id="habilidades" class="resume-section skills-section mb-5" aria-labelledby="titulo-habilidades">
+                            <h2 id="titulo-habilidades" class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">
+                                Soft e hard skills
+                            </h2>
+                            <p class="text-muted small">Afinidade com as seguintes tecnologias e competências:</p>
+                            <div id="skill-groups" class="resume-section-content"></div>
+                            
+                            <div class="resume-skill-item mt-4">
+                                <h3 class="resume-skills-cat font-weight-bold h5 mb-3">Outras competências</h3>
+                                <ul id="other-skills" class="list-inline"></ul>
+                            </div>
+                        </section>
+
+                        <section id="idiomas" class="resume-section language-section mb-5" aria-labelledby="titulo-idiomas">
+                            <h2 id="titulo-idiomas" class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">
+                                Idiomas
+                            </h2>
+                            <div class="resume-section-content">
+                                <ul id="language-list" class="list-unstyled resume-lang-list"></ul>
+                            </div>
+                        </section>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="assets/js/carreira-json.js" defer></script>
+</body>
+</html>

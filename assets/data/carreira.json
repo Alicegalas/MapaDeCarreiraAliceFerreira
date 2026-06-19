@@ -1,0 +1,259 @@
+{
+  "seo": {
+    "title": "Alice Ferreira Galas | Mapa de Carreira em Tecnologia",
+    "description": "Mapa de carreira de Alice Ferreira Galas, com objetivos profissionais, trilha de aprendizagem, habilidades, idiomas e contatos.",
+    "author": "Alice Ferreira Galas",
+    "canonicalUrl": "https://exemplo.com/mapa-de-carreira/"
+  },
+
+  "profile": {
+    "name": "Alice Ferreira Galas",
+    "headline": "Desenvolvedora Front-End | React | C# | ASP.NET Core",
+    "photo": "assets/images/ImgPerfil.png",
+    "photoAlt": "Foto profissional de Alice Ferreira Galas",
+
+    "summary": "Sempre fui apaixonada por tecnologia e pela sua capacidade de transformar a vida das pessoas. Tenho interesse especial pelo desenvolvimento de interfaces e pela criação de experiências digitais intuitivas e acessíveis. Atualmente, estou me especializando em Desenvolvimento Front-End, estudando tecnologias como HTML, CSS, JavaScript, React, Bootstrap, C#, ASP.NET Core e SQL Server, além de ferramentas de design como Figma. Busco aplicar meus conhecimentos no desenvolvimento de aplicações web modernas, funcionais e centradas no usuário. Também valorizo o trabalho em equipe, a troca de conhecimentos e o aprendizado contínuo, acreditando que a colaboração e a curiosidade são fundamentais para construir soluções de qualidade e evoluir profissionalmente na área de tecnologia.",
+
+    "cvUrl": "assets/images/Curriculo-Alice Ferreira Galas.pdf"
+  },
+
+  "contacts": [
+    {
+      "label": "alicefgalas@gmail.com",
+      "url": "mailto:alicefgalas@gmail.com"
+    },
+
+    {
+      "label": "linkedin.com/in/alicefgalas",
+      "url": "https://www.linkedin.com/in/alicefgalas/"
+    },
+
+    {
+      "label": "github.com/Alicegalas",
+      "url": "https://github.com/Alicegalas"
+    }
+  ],
+
+  "careerSteps": [
+
+    {
+      "title": "Desenvolvedora Front-End Júnior",
+
+      "description": "Meu primeiro objetivo profissional é atuar como Desenvolvedora Front-End Júnior, criando interfaces modernas, responsivas e acessíveis, transformando protótipos em aplicações funcionais e proporcionando uma boa experiência aos usuários.",
+
+      "softSkills": [
+        "Comunicação",
+        "Organização",
+        "Trabalho em equipe",
+        "Proatividade"
+      ],
+
+      "roadmap": [
+        "HTML5",
+        "CSS3",
+        "Bootstrap",
+        "JavaScript",
+        "Git",
+        "GitHub",
+        "Figma",
+        "Responsividade"
+      ]
+    },
+
+    {
+      "title": "Desenvolvedora React",
+
+      "description": "Após consolidar minha base em Front-End, pretendo aprofundar meus conhecimentos em React, desenvolvendo aplicações modernas, reutilizáveis e escaláveis, utilizando boas práticas de desenvolvimento e consumo de APIs.",
+
+      "softSkills": [
+        "Adaptabilidade",
+        "Aprendizado contínuo",
+        "Resolução de problemas"
+      ],
+
+      "roadmap": [
+        "React",
+        "Hooks",
+        "React Router",
+        "Context API",
+        "Consumo de APIs",
+        "TypeScript",
+        "Next.js"
+      ]
+    },
+
+    {
+      "title": "Desenvolvedora Front-End Pleno",
+
+      "description": "Busco evoluir para uma posição de Desenvolvedora Front-End Pleno, participando da construção de aplicações robustas, performáticas e acessíveis, colaborando ativamente em decisões técnicas e arquiteturais.",
+
+      "softSkills": [
+        "Pensamento crítico",
+        "Gestão do tempo",
+        "Colaboração"
+      ],
+
+      "roadmap": [
+        "TypeScript",
+        "Next.js",
+        "Testes Front-End",
+        "Acessibilidade",
+        "SEO",
+        "Performance Web"
+      ]
+    },
+
+    {
+      "title": "Desenvolvedora Full-Stack .NET",
+
+      "description": "Pretendo ampliar minha atuação profissional desenvolvendo aplicações completas, integrando interfaces modernas com serviços back-end em C# e ASP.NET Core, criando soluções escaláveis e alinhadas às necessidades dos usuários e empresas.",
+
+      "softSkills": [
+        "Visão sistêmica",
+        "Comunicação",
+        "Trabalho em equipe"
+      ],
+
+      "roadmap": [
+        "C#",
+        "ASP.NET Core",
+        "Entity Framework",
+        "SQL Server",
+        "JWT",
+        "Docker",
+        "APIs REST"
+      ]
+    },
+
+    {
+      "title": "Desenvolvedora Full-Stack Sênior",
+
+      "description": "Como Desenvolvedora Full-Stack Sênior, pretendo atuar no planejamento técnico de sistemas, garantindo qualidade, escalabilidade e boas práticas de desenvolvimento.",
+
+      "softSkills": [
+        "Mentoria",
+        "Liderança técnica",
+        "Tomada de decisão"
+      ],
+
+      "roadmap": [
+        "Arquitetura de Software",
+        "Cloud",
+        "CI/CD",
+        "Microserviços",
+        "System Design"
+      ]
+    },
+
+    {
+      "title": "Tech Lead",
+
+      "description": "Como objetivo de longo prazo, desejo atuar como Tech Lead, liderando equipes de desenvolvimento, apoiando decisões estratégicas e contribuindo para o crescimento técnico dos profissionais e dos produtos digitais.",
+
+      "softSkills": [
+        "Liderança",
+        "Comunicação",
+        "Negociação",
+        "Pensamento estratégico"
+      ],
+
+      "roadmap": [
+        "Arquitetura de Software",
+        "System Design",
+        "Metodologias Ágeis",
+        "Gestão de Projetos",
+        "People Management"
+      ]
+    }
+  ],
+
+  "skillGroups": [
+
+    {
+      "title": "Competências Comportamentais",
+
+      "skills": [
+        {
+          "name": "Comunicação",
+          "level": 90
+        },
+
+        {
+          "name": "Trabalho em equipe",
+          "level": 90
+        },
+
+        {
+          "name": "Organização",
+          "level": 85
+        },
+
+        {
+          "name": "Aprendizado contínuo",
+          "level": 95
+        }
+      ]
+    },
+
+    {
+      "title": "Competências Técnicas",
+
+      "skills": [
+
+        {
+          "name": "HTML, CSS e JavaScript",
+          "level": 85
+        },
+
+        {
+          "name": "React",
+          "level": 80
+        },
+
+        {
+          "name": "Bootstrap",
+          "level": 80
+        },
+
+        {
+          "name": "C# e ASP.NET Core",
+          "level": 60
+        },
+
+        {
+          "name": "SQL Server",
+          "level": 65
+        },
+
+        {
+          "name": "Git e GitHub",
+          "level": 70
+        }
+      ]
+    }
+  ],
+
+  "otherSkills": [
+    "Figma",
+    "Canva",
+    "PowerPoint",
+    "Excel",
+    "UI Design",
+    "UX Básico"
+  ],
+
+  "languages": [
+
+    {
+      "name": "Português",
+      "level": "Nativo"
+    },
+
+    {
+      "name": "Inglês",
+      "level": "Básico"
+    }
+
+  ]
+}
+
